@@ -17,6 +17,15 @@
     <link href="/assets/images/image-9e5f11c0.png" rel="icon" media="(prefers-color-scheme: dark)">
     <!-- Open Graph -->
     <meta property="og:type" content="website">
+    <link rel="canonical" href="https://annaovrakh.com/webinar/">
+    <meta property="og:url" content="https://annaovrakh.com/webinar/">
+    <meta property="og:site_name" content="Анна Оврах">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:image" content="https://annaovrakh.com/assets/meta/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Анна Оврах, коуч">
+    <meta name="twitter:image" content="https://annaovrakh.com/assets/meta/og-image.jpg">
     <meta property="og:title" content="Как перестать ждать идеального момента и начать действовать?">
     <meta property="og:description" content="30-минутное видео о том, как принимать решения и расти в эпоху постоянных изменений.">
     <!-- X -->
@@ -35,6 +44,23 @@
       gtag('js', new Date());
 
       gtag('config', 'G-3CL2SVG16C');
+    </script>
+    <!-- Conversion events: booking and webinar-bot clicks -->
+    <script>
+      document.addEventListener('click', function (e) {
+        var a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+        if (!a || typeof gtag !== 'function') return;
+        var name = null;
+        if (a.href.indexOf('calendar.google.com/appointments') > -1) name = 'booking_click';
+        else if (a.href.indexOf('t.me/AO_Coach_ICF_bot') > -1) name = 'webinar_bot_click';
+        if (!name) return;
+        gtag('event', name, {
+          link_url: a.href,
+          link_text: (a.textContent || '').trim().slice(0, 60),
+          page_path: location.pathname,
+          transport_type: 'beacon'
+        });
+      }, true);
     </script>
     <!-- End of headStart -->
 	
