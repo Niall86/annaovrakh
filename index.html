@@ -144,6 +144,24 @@
   ]
 }
     </script>
+    <!-- Yandex.Metrika counter -->
+    <script>
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();
+    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    ym(113593091, "init", {clickmap:true, trackLinks:true, accurateTrackBounce:true});
+    document.addEventListener("click", function (e) {
+      var a = e.target && e.target.closest ? e.target.closest("a[href]") : null;
+      if (!a) return;
+      var goal = null;
+      if (a.href.indexOf("calendar.google.com/appointments") > -1) goal = "book_session";
+      else if (a.href.indexOf("t.me/AO_Coach_ICF_bot") > -1) goal = "open_bot";
+      else if (a.pathname.replace(/\/$/, "") === "/webinar" && location.pathname.replace(/\/$/, "") !== "/webinar") goal = "go_webinar";
+      if (goal) ym(113593091, "reachGoal", goal);
+    }, true);
+    </script>
     <!-- End of headStart -->
 	
 	<style data-framer-font-css>@font-face { font-family: "Inter"; src: url("/assets/fonts/font-bb40238c.woff2"); font-display: swap; font-style: normal; font-weight: 500; unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F }
