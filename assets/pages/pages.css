@@ -86,6 +86,8 @@ th { font-weight: 600; }
 .cta { margin: 56px 0 0; padding: 32px; background: var(--brand); color: #fff; border-radius: 24px; }
 .cta h2 { margin-top: 0; color: #fff; }
 .cta p { color: rgba(255,255,255,.88); }
+.cta p a { color: #fff; }
+.cta .actions + p { margin: 20px 0 0; }
 .cta .prices { margin: 0 0 24px; padding: 0; list-style: none; }
 .cta .prices li { margin: 0 0 6px; }
 .cta .actions { display: flex; flex-wrap: wrap; gap: 12px; }
