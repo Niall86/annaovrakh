@@ -106,6 +106,17 @@ th { font-weight: 600; }
 .related { margin: 48px 0 0; padding: 24px 0 0; border-top: 1px solid var(--line); }
 .related ul { list-style: none; padding: 0; }
 
+/* About page */
+.about-intro { display: grid; grid-template-columns: 1fr 240px; gap: 32px; align-items: start; margin: 0 0 8px; }
+.about-photo { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 15%; border-radius: 20px; display: block; }
+.cert { margin: 0 0 20px; }
+.cert img { width: 100%; height: auto; display: block; border-radius: 16px; border: 1px solid var(--line); background: #fff; }
+.review { margin: 0 0 20px; padding: 24px; background: var(--surface); border-radius: 20px; border: 1px solid var(--line); }
+.review blockquote { margin: 0 0 12px; }
+.review blockquote p { margin: 0; }
+.review figcaption { font-size: 15px; color: var(--muted); }
+.review figcaption strong { color: var(--text); }
+
 /* Footer */
 .site-footer { border-top: 1px solid var(--line); }
 .site-footer .wrap { max-width: 1120px; margin: 0 auto; padding: 24px; display: flex; flex-wrap: wrap;
@@ -120,4 +131,7 @@ th { font-weight: 600; }
   .brand span { display: none; }
   .cta { padding: 24px 20px; border-radius: 20px; }
   .cta .actions .btn { width: 100%; }
+  .about-intro { grid-template-columns: 1fr; gap: 8px; }
+  .about-photo { max-width: 220px; margin-bottom: 8px; }
+  .review { padding: 20px; }
 }
