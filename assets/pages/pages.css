@@ -106,6 +106,14 @@ th { font-weight: 600; }
 .related { margin: 48px 0 0; padding: 24px 0 0; border-top: 1px solid var(--line); }
 .related ul { list-style: none; padding: 0; }
 
+/* /stati/ hub */
+.hub { list-style: none; padding: 0; margin: 0 0 8px; }
+.hub li { margin: 0 0 12px; padding: 20px 24px; background: var(--surface); border: 1px solid var(--line); border-radius: 20px; }
+.hub h3 { margin: 0 0 6px; }
+.hub h3 a { text-decoration: none; }
+.hub h3 a:hover { text-decoration: underline; }
+.hub p { margin: 0; font-size: 16px; color: var(--muted); }
+
 /* Footer */
 .site-footer { border-top: 1px solid var(--line); }
 .site-footer .wrap { max-width: 1120px; margin: 0 auto; padding: 24px; display: flex; flex-wrap: wrap;
@@ -119,5 +127,6 @@ th { font-weight: 600; }
   .site-header .wrap, .site-footer .wrap { padding-left: 16px; padding-right: 16px; }
   .brand span { display: none; }
   .cta { padding: 24px 20px; border-radius: 20px; }
+  .hub li { padding: 16px 18px; }
   .cta .actions .btn { width: 100%; }
 }
