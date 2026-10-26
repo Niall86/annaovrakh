@@ -102,6 +102,15 @@ th { font-weight: 600; }
 .cta .btn-ghost { color: #fff; border-color: rgba(255,255,255,.6); }
 .cta .btn-ghost:hover { background: #fff; color: var(--brand); }
 
+/* Client review: quote, name, role. Shared by topic pages and /ob-anne/ */
+.review figure { margin: 0; padding: 28px; background: var(--surface); border-radius: 20px; border: 1px solid var(--line); }
+.review blockquote { margin: 0 0 20px; font-size: 18px; line-height: 1.6; }
+.review blockquote p { margin: 0 0 12px; }
+.review blockquote p:last-child { margin-bottom: 0; }
+.review figcaption { padding-left: 16px; border-left: 2px solid var(--brand); font-size: 15px; line-height: 1.45; }
+.review-name { display: block; font-weight: 600; }
+.review-role { display: block; color: var(--muted); }
+
 .faq h3 { margin-top: 24px; }
 .related { margin: 48px 0 0; padding: 24px 0 0; border-top: 1px solid var(--line); }
 .related ul { list-style: none; padding: 0; }
@@ -118,6 +127,8 @@ th { font-weight: 600; }
   main { padding: 28px 16px 48px; }
   .site-header .wrap, .site-footer .wrap { padding-left: 16px; padding-right: 16px; }
   .brand span { display: none; }
+  .review figure { padding: 20px; }
+  .review blockquote { font-size: 17px; }
   .cta { padding: 24px 20px; border-radius: 20px; }
   .cta .actions .btn { width: 100%; }
 }
